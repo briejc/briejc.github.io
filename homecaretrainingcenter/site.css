@@ -1,3 +1,7 @@
-p.style-k8s8yt4srepeaterButtonlabel {
-	color: #292929
+nav [data-drophposition] p {
+	color: #292929 !important;
+}
+
+nav [data-state~="selected"] {
+	font-weight: 600;
 }
