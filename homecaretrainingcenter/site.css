@@ -4,5 +4,4 @@ nav [data-drophposition] p {
 
 nav [data-state~=over] p,
 nav [data-state~="selected"] p {
-	font-weight: 600;
 }
