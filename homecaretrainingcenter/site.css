@@ -1,7 +1,7 @@
 nav [data-drophposition] p {
-	color: #292929 !important;
+	color: #292929;
 }
 
-nav [data-state~="selected"] {
+nav [data-state~="selected"] p {
 	font-weight: 600;
 }
