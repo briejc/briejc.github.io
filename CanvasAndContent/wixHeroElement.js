@@ -34,7 +34,7 @@ class CanvasHero extends HTMLElement {
     .empty:after {
         content: '';
         display: block;
-        background: url("hero_empty_frame.png") no-repeat top left transparent;
+        background: url("https://briejc.github.io/CanvasAndContent/hero_empty_frame.png") no-repeat top left transparent;
         width: 100%;
         height: 100%;
         left: 0px;
@@ -43,7 +43,7 @@ class CanvasHero extends HTMLElement {
         z-index: 10;
     }
     .logo {
-        background-image: url("hero_logo_frame.png");
+        background-image: url("https://briejc.github.io/CanvasAndContent/hero_logo_frame.png");
         background-repeat: no-repeat;
         background-size: cover;
     }
