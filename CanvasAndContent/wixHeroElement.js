@@ -29,12 +29,12 @@ class CanvasHero extends HTMLElement {
     .hero-box.desktop {
         display: flex;
         justify-content: center;
-        min-width: 993px;    
+        min-width: 1332px;    
     }
     .picture {
         position: relative;
-        width: 331px;
-        height: 444px;
+        width: 444px;
+        height: 600px;
     }
     .empty:after {
         content: '';
@@ -46,6 +46,7 @@ class CanvasHero extends HTMLElement {
         top: 0px;
         position: absolute;
         z-index: 10;
+	background-size: cover;
     }
     .logo {
         background-image: url("https://briejc.github.io/CanvasAndContent/hero_logo_frame.png");
