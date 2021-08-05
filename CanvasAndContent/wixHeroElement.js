@@ -16,6 +16,11 @@ class CanvasHero extends HTMLElement {
         overflow: hidden;
         object-fit: cover;
     }
+    .hero-box {
+    	position: relative;
+	left: -20px;
+	top: -10px;
+    }
 }
 @media screen and (min-device-width: 480px) {
     .hero-box.mobile {
