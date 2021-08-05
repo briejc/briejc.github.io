@@ -12,7 +12,7 @@ class CanvasHero extends HTMLElement {
     }
     .video-content {
         width: 100%;
-        height: 100%; 
+        height: 100vh; 
         overflow: hidden;
         object-fit: cover;
     }
