@@ -28,7 +28,7 @@ class CanvasHero extends HTMLElement {
         max-width: calc(2.5 * 100vh);
         margin: auto;
         position: relative;
-        left: 0px;
+        left: calc((100% - var(--customElementWidth)) * -0.5);
         top: 0px;
     }
     .picture {
