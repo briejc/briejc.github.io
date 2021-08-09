@@ -12,14 +12,9 @@ class CanvasHero extends HTMLElement {
     }
     .video-content {
         width: 100%;
-        height: 100vh; 
+        height: 100%; 
         overflow: hidden;
         object-fit: cover;
-    }
-    .hero-box {
-    	position: relative;
-	left: -20px;
-	top: -10px;
     }
 }
 @media screen and (min-device-width: 480px) {
@@ -29,36 +24,45 @@ class CanvasHero extends HTMLElement {
     .hero-box.desktop {
         display: flex;
         justify-content: center;
-        min-width: 1332px;    
+        /*max-width: 2400px; */
+        max-width: calc(2.5 * 100vh);
+        margin: auto;
+        position: relative;
+        left: 0px;
+        top: 0px;
     }
     .picture {
         position: relative;
-        width: 444px;
-        height: 600px;
+        width: 33vw;
+        height: max(98vh,420px);
+        min-height: 420px;
+        min-width: 320px;
+    
     }
     .empty:after {
         content: '';
         display: block;
-        background: url("https://briejc.github.io/CanvasAndContent/hero_empty_frame.png") no-repeat top left transparent;
+        background: url("https://briejc.github.io/CanvasAndContent/hero_empty_frame.png") no-repeat center top transparent;
         width: 100%;
         height: 100%;
         left: 0px;
         top: 0px;
         position: absolute;
         z-index: 10;
-	background-size: cover;
+        background-size: contain;
+
     }
     .logo {
-        background-image: url("https://briejc.github.io/CanvasAndContent/hero_logo_frame.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: url("https://briejc.github.io/CanvasAndContent/hero_logo_frame.png") no-repeat center top transparent;
+        background-size: contain;
     }
     .video-content {
-    /*    padding:59px 35px;*/
         position: absolute;
-        top: 83px; /* Adjust top position */
-        left: 55px; /* Adjust left position */
         z-index: 5;
+        top: min(8vw,calc(2.5 * 100vh * .07));
+        left: 17%;
+        z-index: 5;
+        width: 66%;
     }
 }
 	</style>
