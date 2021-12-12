@@ -5,11 +5,14 @@
 	<body>
 		<iframe id="iframe" src="https://dewdropink.tumblr.com/random" style="position: absolute; height: 100%; border: none; width: 100%;min-height: 105vh;" > </iframe>
 		<script type="text/javascript">
+		var triggered = false;
 		$(window).scroll(function() {
-		   if(Math.ceil($(window).scrollTop() + $(window).height()) >= Math.ceil($(document).height())) {
-		   			   window.scrollTo(0,0);
-
+		   if(!triggered && Math.ceil($(window).scrollTop() + $(window).height()) >= Math.ceil($(document).height())) {
 			   $( '#iframe' ).attr( 'src', function ( i, val ) { return val; });
+		   			   window.scrollTo(0,0);
+					   triggered = true;
+					   setTimeout(() => triggered = false, 1000);
+
 		   }
 		});
 		</script>
