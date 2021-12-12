@@ -8,10 +8,14 @@
 		var triggered = false;
 		$(window).scroll(function() {
 		   if(!triggered && Math.ceil($(window).scrollTop() + $(window).height()) >= Math.ceil($(document).height())) {
-			   $( '#iframe' ).attr( 'src', function ( i, val ) { return val; });
+			   $( '#iframe' ).attr( 'src', function ( i, val ) { return val; }).hide();
 		   			   window.scrollTo(0,0);
 					   triggered = true;
-					   setTimeout(() => triggered = false, 1000);
+					   setTimeout(() => {
+					   triggered = false;
+					   $( '#iframe' ).show();
+					   		   			   window.scrollTo(0,0);
+					   }, 500);
 
 		   }
 		});
